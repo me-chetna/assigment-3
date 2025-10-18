@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="title">Hello</h1>
+    <div id="boxes">
+        <h2 id="box1" onclick="changecolor('box1')">RED</h2>
+        <h2 id="box2" onclick="changecolor('box2')">GREEN</h2>
+        <h2 id="box3" onclick="changecolor('box3')">BLUE</h2>
+        <h2 id="box4" onclick="changecolor('box4')">YELLOW</h2>
+    </div>
+    <form id="submitname">
+        <input type="text" placeholder="Enter Your name" id="nameinput">
+        <button type="submit" onclick="greet(document.getElementById('nameinput').value)">GREET</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
