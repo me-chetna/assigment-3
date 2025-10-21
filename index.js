@@ -1,6 +1,11 @@
 function greet(userName) {
     event.preventDefault();
-    document.getElementById("title").innerHTML = `Hello, ${userName}`;
+    if(!userName){
+        document.getElementById("title").innerHTML = `Hello`;
+    }
+    else{
+        document.getElementById("title").innerHTML = `Hello, ${userName}`;
+    }
 }
 function changecolor(boxID){
     const box =document.getElementById(boxID);
